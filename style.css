@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #eabf69;
+    padding: 10px;
+}
+
+.shopping-list {
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px 50px;
+    margin: 100px auto 20px;
+}
+
+.shopping-list h1 {
+    margin-bottom: 20px;
+}
+
+.shopping-list h2 {
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ededeb;
+    border-radius: 25px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+input#items {
+    flex-basis: 75%;
+}
+
+.add {
+    border: none;
+    outline: none;
+    background: #de9d1d;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.add:hover {
+    background-color: #eabf69;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 150;
+    font-style: italic;
+    display: block;
+}
+
+ul li {
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+    padding: 10px 20px 10px 40px;
+    cursor: pointer;
+    gap: 10px;
+    position: relative;
+    justify-content: flex-end;
+}
+
+li p.grocery {
+    flex: 1;
+    text-align: left;
+}
+
+li p.amount {
+    width: 25%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+img .delete {
+    background: none;
+    border: none;
+    outline: none;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+span img {
+    height: 15px;
+    width: 15px;   
+    padding: 3px;
+}
+
+ul li span:hover {
+    background: #de9d1d;
+    border-radius: 50%;
+}
+
+ul li.ticked {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+ul li.ticked::before {
+    background-image: url(images/checked.png);
+}

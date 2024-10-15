@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link href="style.css" rel="stylesheet"> 
+</head>
+<body onload="listMessage()">
+    <div class="container">
+        <div class="shopping-list">
+            <h1>Shopping List</h1>
+            <h2>Add New Item</h2>
+
+            <form id="form">
+                <input id="items" type="text" placeholder="Item name"></input>
+                <input id="amount" type="text" placeholder="Amount"></input>
+                <button type="submit" class="add">Add</button>
+            </form>
+            <h3>Create your list...</h3>
+            <ul id="list-container">
+                <!-- <li class="ticked">
+                        <p class="grocery">Item 1</p>
+                        <p class="amount">Amount 1</p>
+                        <span>
+                            <img src="./images/delete.png" class="delete" alt="delete button">
+                        </span>
+                </li>
+                <li class="ticked">
+                        <p class="grocery">Item 2</p>
+                        <p class="amount">Amount 2</p>
+                        <span>
+                            <img src="./images/delete.png" class="delete" alt="delete button">
+                        </span>
+                </li>
+                <li class="ticked">
+                        <p class="grocery">Item 3</p>
+                        <p class="amount">Amount 3</p>
+                        <span>
+                            <img src="./images/delete.png" class="delete" alt="delete button">
+                        </span>
+                </li> --> 
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
